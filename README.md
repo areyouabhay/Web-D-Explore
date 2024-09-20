@@ -1,2 +1,3 @@
 # Web-D-Explore
-Frontend Bootcamp ISTE HIT SC
+
+Frontend Bootcamp by ISTE HIT SC
