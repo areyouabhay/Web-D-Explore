@@ -5,5 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <h1
+      style="
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      "
+    >
+      Forms in HTML
+    </h1>
+    <fieldset>
+      <legend>Personal Details</legend>
+      <form>
+        <!-- Salutation Input -->
+        <label for="sal">Salutation:</label><br />
+        <select name="sal" id="sal">
+          <option>none</option></select
+        ><br /><br />
+        <!-- Name Input -->
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <!-- Gender Input -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label><br /><br />
+        <!-- Email Input -->
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" /><br /><br />
+        <!-- Date Of Birth Input -->
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="dob" /><br /><br />
+        <!-- Address Input -->
+        <label for="addr">Address:</label><br />
+        <textarea name="addr" id="addr" cols="30" rows="4"></textarea
+        ><br /><br />
+        <!-- Submit Button -->
+        <button>Submit</button>
+      </form>
+    </fieldset>
+  </body>
 </html>
