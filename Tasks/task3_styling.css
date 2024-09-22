@@ -1,0 +1,63 @@
+body {
+  background-image: url("../Assets/Images/bg.jpg");
+}
+
+#top-head {
+  font-size: 100px;
+  color: bisque;
+  text-align: center;
+}
+
+.parent {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.bulb {
+  margin: 300px auto 0px;
+  top: 240px;
+  left: 50%;
+  display: block;
+  opacity: 100;
+  transition: opacity 0.3s;
+}
+
+p {
+  text-align: center;
+  font-size: 100px;
+  font-family: "Protest Guerrilla", sans-serif;
+  color: violet;
+  text-shadow: 5px 10px 20px violet;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.parent:hover .overlay {
+  opacity: 1;
+}
+
+.image {
+  position: absolute;
+  margin: 300px auto 0px;
+  top: 240px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

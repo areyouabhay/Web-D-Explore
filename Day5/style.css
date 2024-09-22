@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+
+#element {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px 5px violet;
+}
+
+.box {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  background-color: aqua;
+}
+
+#box2 {
+  position: relative;
+  left: 10px;
+  top: 20px;
+}
+
+#box3 {
+  position: sticky;
+  top: 20px;
+  left: 20px;
+}
+
+#parent {
+  top: 200px;
+  left: 200px;
+  background-color: bisque;
+}
