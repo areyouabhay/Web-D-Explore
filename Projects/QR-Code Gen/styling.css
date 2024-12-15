@@ -15,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url("../../Images/Matte\ Black\ Wallpaper\ HD\ Free\ Download.jpg");
+  background-image: url("bg.jpg");
   background-position: center;
   background-size: cover;
 }
