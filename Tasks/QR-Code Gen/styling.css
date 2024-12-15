@@ -1,0 +1,55 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+#qr-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#url-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Button Styles */
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #357ab8; /* Darker shade on hover */
+}
+
+/* QR Code Image Styles */
+#qrcode {
+  margin-top: 20px;
+  max-width: 100%;
+}

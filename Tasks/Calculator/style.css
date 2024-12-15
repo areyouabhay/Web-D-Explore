@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Protest+Guerrilla&family=Righteous&family=Ruda:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ruda", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../Images/Matte\ Black\ Wallpaper\ HD\ Free\ Download.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+}
+
+.container {
+  background-color: rgb(8, 8, 8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(245, 244, 244, 0.915);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+.result {
+  font-size: 2em;
+  margin-top: 20px;
+}
