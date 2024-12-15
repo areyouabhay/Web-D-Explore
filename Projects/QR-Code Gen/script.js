@@ -1,17 +1,13 @@
 let Api = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=";
-
-document.getElementById("b").addEventListener("click", () => {
-  generateQRCode();
-});
+const generateButton = document.getElementById("b");
+const clearButton = document.getElementById("clr");
+const resultImage = document.querySelector(".result");
 function generateQRCode() {
-  const url = document.getElementById("url-input").value;
-  const qrCodeimage = document.getElementById("qrcode");
-
-  qrCodeimage.src = "";
-
+  const url = document.getElementById("input").value;
   if (url) {
     try {
-      qrCodeimage.src = Api + url;
+      resultImage.src = Api + url;
+      resultImage.style.visibility = "visible";
     } catch (error) {
       alert("Api Error aagya bhai !");
       return;
@@ -20,3 +16,10 @@ function generateQRCode() {
     alert("Please enter a URL or text.");
   }
 }
+function clearResult() {
+  document.getElementById("input").value = "";
+  resultImage.style.visibility = "hidden";
+}
+
+generateButton.addEventListener("click", generateQRCode);
+clearButton.addEventListener("click", clearResult);

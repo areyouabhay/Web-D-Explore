@@ -3,23 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QR Code Generator</title>
+    <title>QR-Code Generator</title>
     <link rel="stylesheet" href="styling.css" />
   </head>
   <body>
-    <h1>QR Code Generator</h1>
-    <form id="qr-form">
-      <input
-        type="text"
-        id="url-input"
-        placeholder="Enter URL or text"
-        required
-      />
-      <button id="b">Generate QR Code</button>
-    </form>
-    <div>
-      <img id="qrcode" alt="QR Code" />
+    <nav class="navbar">
+      <div>ISTE HIT</div>
+      <div>Project: QR Code Generator</div>
+    </nav>
+    <div class="container">
+      <h1>QR Code Generator</h1>
+      <br />
+      <label>Enter Text / Url</label>
+      <input type="text" id="input" placeholder="Example: ISTE" required />
+      <img class="result" /><br /><br />
+      <button id="b">Generate</button> <br /><br />
+      <button id="clr">Clear</button>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

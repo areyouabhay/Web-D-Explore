@@ -1,55 +1,62 @@
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Protest+Guerrilla&family=Righteous&family=Ruda:wght@400..900&display=swap");
+
+* {
   margin: 0;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ruda", sans-serif;
 }
 
-h1 {
-  color: #4a90e2;
-  margin-bottom: 20px;
-}
-
-#qr-form {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#url-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-/* Button Styles */
-button {
-  background-color: #4a90e2;
+body {
+  font-family: Arial, sans-serif;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../Images/Matte\ Black\ Wallpaper\ HD\ Free\ Download.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+}
+
+.container {
+  background-color: rgb(8, 8, 8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(245, 244, 244, 0.915);
+  text-align: center;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
   border: none;
-  padding: 10px 15px;
-  border-radius: 4px;
+}
+
+button {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
-  font-size: 16px;
 }
 
 button:hover {
-  background-color: #357ab8; /* Darker shade on hover */
+  background-color: #e6b800;
 }
 
-/* QR Code Image Styles */
-#qrcode {
-  margin-top: 20px;
-  max-width: 100%;
+.result {
+  visibility: hidden;
 }
